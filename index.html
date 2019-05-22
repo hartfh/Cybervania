@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="app" lang="en-US" prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8" />
+	<title>Endless Battlefield</title>
+	<head>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			html {
+				background: #000000;
+				/* cursor: url(''); */
+			}
+			body {
+				overflow: hidden;
+			}
+			body, main {
+				float: left;
+				width: 100%;
+			}
+			canvas {
+				image-rendering: -moz-crisp-edges;
+				image-rendering: -webkit-crisp-edges;
+				image-rendering: pixelated;
+				left: 0;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+			}
+			#viewport-container {
+				background: #000000;
+				float: left;
+				display: block;
+				height: 100%;
+				position: relative;
+				width: 100%;
+			}
+			#main-viewport {
+				left: 0;
+				top: 0;
+				opacity: 1;
+				position: absolute;
+			}
+			#img-loader {
+				display: block;
+				height: 0;
+				left: 0:
+				position: absolute;
+				top: 0;
+				width: 0;
+			}
+		</style>
+	</head>
+	<body oncontextmenu="return false;">
+		<header>
+		</header>
+		<main>
+			<div id="viewport-container">
+			</div>
+			<img id="img-loader" alt="" src="" />
+		</main>
+		<footer>
+			<script type="text/javascript" src="launcher.js"></script>
+		</footer>
+	</body>
+</html>
